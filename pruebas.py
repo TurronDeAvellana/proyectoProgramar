@@ -44,16 +44,37 @@ def anagrama(w1,w2):
                 auxList.append(letter)
             else:
                 None
-
     if (len(auxList) == len(list1) and len(auxList) == len(list2)):
         print(True)
     else:
         print(False)
-    
-    
-            
-
-        
 
 
+""""
+#3 La sucesion de fibonacci
+* Escribe un programa que imprima los 50 primeros números de la sucesión
+ * de Fibonacci empezando en 0.
+ * - La serie Fibonacci se compone por una sucesión de números en
+ *   la que el siguiente siempre es la suma de los dos anteriores.
+ *   0, 1, 1, 2, 3, 5, 8, 13...
+"""
+
+def fibonacci():
+    a,b = 0,1
     
+    print(a)
+    print(b)
+
+    for _ in range (48):
+        c = a + b
+        print(c)
+        a = b
+        b = c 
+
+
+""""
+#4 ¿Es un numero primo?
+* Escribe un programa que se encargue de comprobar si un número es o no primo.
+ * Hecho esto, imprime los números primos entre 1 y 100.
+"""
+
